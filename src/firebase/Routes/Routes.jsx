@@ -3,6 +3,8 @@ import Root from "../../Layouts/Root";
 import Home from "../../pages/Home";
 import About from "../../pages/About";
 import Career from "../../pages/Career";
+import Login from "../../pages/Login";
+import Registration from "../../pages/Registration";
 
 
  
@@ -24,7 +26,15 @@ import Career from "../../pages/Career";
         {
           path:'/career',
           element:<Career></Career>
-        }
+        },
+        {
+          path:'/login',
+          element:<Login></Login>
+        },
+        {
+          path:'/register',
+          element:<Registration></Registration>
+        },
        ]
      }
 
