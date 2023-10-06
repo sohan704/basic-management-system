@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "Emily Johnson",
+      "image": "https://i.ibb.co/BPCcGGr/p1.jpg",
+      "company": "Tech Solutions Inc.",
+      "say": "Tech Education has been instrumental in my career. Their courses provided me with the skills and knowledge I needed to excel in the tech industry. Thanks to them, I landed my dream job at Tech Solutions Inc.!"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "image": "https://i.ibb.co/87NTwK0/p2.jpg",
+      "company": "Innovative Software Labs",
+      "say": "I owe my success to Tech Education. Their comprehensive curriculum and hands-on projects gave me the confidence to tackle real-world challenges. Thanks to them, I'm thriving at Innovative Software Labs!"
+    },
+    {
+      "id": 3,
+      "name": "James Johnson",
+      "image": "https://i.ibb.co/yySqCVG/p3.jpg",
+      "company": "Data Dynamics Corporation",
+      "say": "Tech Education has been a game-changer for me. Their expert instructors and cutting-edge content prepared me for the demands of the tech industry. Now, I'm excelling at Data Dynamics Corporation!"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "image": "https://i.ibb.co/2sS1TCs/p4.jpg",
+      "company": "Cyber Systems Innovators",
+      "say": "I can't thank Tech Education enough. Their hands-on approach and industry-relevant curriculum set me up for success. I'm now thriving at Cyber Systems Innovators, and it's all thanks to them!"
+    }
+  ]
+  

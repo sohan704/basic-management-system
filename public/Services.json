@@ -1,0 +1,50 @@
+[
+  {
+      "id" : 1,
+      "name": "LeetCode Mastery Webinar",
+      "image": "https://i.ibb.co/tbmDzWT/leetcode.jpg",
+      "price": 49.99,
+      "short_description": "Master data structures and algorithms to ace technical interviews.",
+      "long_description": "This comprehensive course is designed to help you excel in technical interviews. With a focus on mastering essential data structures and algorithms, you'll gain the confidence and skills needed to tackle even the most challenging coding problems. Through a combination of in-depth lectures, hands-on exercises, and real-world examples, you'll be well-prepared to showcase your coding expertise to potential employers."
+  },
+  {
+      "id" : 2,
+      "name": "DevOps Workshop",
+      "image": "https://i.ibb.co/51rQCVS/dcoker.jpg",
+      "price": 29.99,
+      "short_description": "Learn best practices for software development and IT operations collaboration.",
+      "long_description": "Join our DevOps Webinar and dive into the world of DevOps practices and principles. This session will cover topics ranging from continuous integration and continuous delivery (CI/CD) to infrastructure as code (IaC) and containerization. You'll gain valuable insights on how to streamline collaboration between development and operations teams, ultimately leading to more efficient and reliable software delivery pipelines."
+  },
+  {
+      "id" : 3,
+      "name": "Linux Workshop",
+      "image": "https://i.ibb.co/SyFsPYN/linux.jpg",
+      "price": 19.99,
+      "short_description": "Get hands-on experience with the Linux operating system and its command-line interface.",
+      "long_description": "Immerse yourself in the world of Linux with our hands-on workshop. Whether you're a beginner or looking to deepen your Linux knowledge, this workshop has something for everyone. From navigating the command-line interface to managing files, directories, and permissions, you'll gain practical skills that are essential for both personal and professional use. Join us and unlock the full potential of this powerful operating system."
+  },
+  {
+      "id" :4,
+      "name": "Python for Data Science",
+      "image": "https://i.ibb.co/7n6qNjD/python.png",
+      "price": 39.99,
+      "short_description": "Explore Python's powerful libraries for data manipulation, analysis, and visualization.",
+      "long_description": "Delve into the world of data science with Python, one of the most versatile and widely used programming languages in the field. This course will take you on a journey through essential libraries like NumPy, Pandas, and Matplotlib, equipping you with the tools to efficiently manipulate and visualize data. Whether you're a data enthusiast or a professional seeking to enhance your skills, this course will empower you to extract meaningful insights from complex datasets."
+  },
+  {
+      "id" : 5,
+      "name": "Machine Learning Workshop",
+      "image": "https://i.ibb.co/tK0GY8t/ai.jpg",
+      "price": 44.99,
+      "short_description": "Discover the basics of machine learning and its applications in various fields.",
+      "long_description": "Embark on a captivating journey into the realm of machine learning. This introductory course will demystify the fundamental concepts, algorithms, and techniques that power modern AI applications. From supervised and unsupervised learning to regression and classification, you'll gain a solid foundation in machine learning principles. Through hands-on projects and real-world examples, you'll witness firsthand the transformative potential of this cutting-edge technology."
+  },
+  {
+      "id" : 6,
+      "name": "Web Development Seminar",
+      "image": "https://i.ibb.co/7J55y9w/html.jpg",
+      "price": 24.99,
+      "short_description": "Learn the essentials of HTML, CSS, and JavaScript for building dynamic web applications.",
+      "long_description": "Unlock the world of web development with this comprehensive course. Whether you're a complete beginner or looking to refine your skills, you'll learn the building blocks of creating dynamic and interactive web applications. From crafting the structure with HTML to styling with CSS and adding interactivity with JavaScript, you'll be equipped with the skills needed to bring your web development projects to life. Join us and embark on a journey into the exciting world of web development."
+  }
+]
