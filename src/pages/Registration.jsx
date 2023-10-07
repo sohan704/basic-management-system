@@ -53,8 +53,7 @@ const Registration = () => {
 
       return;
     }
-    else if(!/^(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]+$/.test(password)){
-      console.log("please use special character");
+    else if(!/^(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*.]+$/.test(password)){
      
       toast.error('please use special character!', {
         position: "top-right",
