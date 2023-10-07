@@ -5,6 +5,9 @@ import About from "../../pages/About";
 import Career from "../../pages/Career";
 import Login from "../../pages/Login";
 import Registration from "../../pages/Registration";
+import Blog from "../../pages/Blog";
+import ServiceDetails from "../../pages/ServiceDetails";
+import PrivateRoute from "./PrivateRoute";
 
 
  
@@ -16,7 +19,7 @@ import Registration from "../../pages/Registration";
         {
           path:'/',
           element:<Home></Home>,
-          loader: () => fetch('./Services.json')
+          loader: () => fetch('../../../public/Services.json')
           
         },
         {
@@ -35,6 +38,14 @@ import Registration from "../../pages/Registration";
           path:'/register',
           element:<Registration></Registration>
         },
+        {
+          path:'/blog',
+          element: <Blog></Blog>
+        },
+        {
+          path:'/services/:id',
+          element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
+        }
        ]
      }
 

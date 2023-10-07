@@ -1,16 +1,23 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 
 const Service = ({ card }) => {
 
+ const navigate = useNavigate();
 
-  const { image,name,price, short_description } = card;
+  const {id, image,name,price, short_description } = card;
 
   useEffect(() => {
     AOS.init();
   }, [])
+
+  const handleBuyNow = () => {
+     navigate(`/services/${id}`);
+  }
+
   return (
     <div data-aos="zoom-in" data-aos-duration="3000" className='space-y-3 h-[500px] rounded-lg justify-end p-5 border-gray-300 border-2 w-9/12 mx-auto flex flex-col'>
       <div>
@@ -20,7 +27,7 @@ const Service = ({ card }) => {
       <div className='text-xl my-2 text-red-600 font-bold'>${price}</div>
       </div>
       <div className='flex-grow'>
-        <button 
+        <button onClick={handleBuyNow}
         className='bg-gray-800 text-lg p-2 rounded-md text-white'>
         Buy Now</button>
       </div>

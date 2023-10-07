@@ -3,18 +3,22 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Navbar = () => {
-   
-  const {signIn,logOut,user,setLoggedIn, loggedIn} = useContext(AuthContext);
+
+  const { signIn, logOut, user, loading } = useContext(AuthContext);
 
   const navlinks = <>
-  <li> <NavLink to="/">Home</NavLink> </li>
-  <li> <NavLink to="/about">About</NavLink> </li>
-  <li> <NavLink to="/career">Career</NavLink> </li>  
-     
-   </>
-  
+    <li> <NavLink to="/">Home</NavLink> </li>
+    <li> <NavLink to="/about">About</NavLink> </li>
+    <li> <NavLink to="/career">Career</NavLink> </li>
+
+    {
+      user && <li> <NavLink to="/blog">Blog</NavLink> </li>
+    }
+
+  </>
+
   const handleLogOut = () => {
-    logOut().then(result => setLoggedIn(false)).catch();
+    logOut().then().catch();
   }
 
 
@@ -36,21 +40,57 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-           
 
-            {
-              navlinks
-            }
-            
+
+          {
+            navlinks
+          }
+
         </ul>
       </div>
       <div className="navbar-end">
-        <img className="h-[70px] w-[70px] rounded-full object-cover mx-2" src="https://i.ibb.co/87NTwK0/p2.jpg" alt="" />
         {
-          (user && loggedIn)? <a onClick={handleLogOut} className="btn">LogOut</a> :
-          <Link to="/login"><a className="btn">Login</a></Link>
-          
+
+         <div>
+            {
+              (user) && <img className="h-[70px] w-[70px] rounded-full object-cover mx-2"
+                src={(user) ? user.photoURL : ''} alt="" />
+            }
+          </div>
         }
+
+
+        {
+
+         <div>
+            {
+              <p className="mx-3 font-md text-lg">{(user) ? user.displayName : ''}</p>
+            }
+          </div>
+        }
+
+
+
+        {
+
+       <div>
+            {
+              (user) ? <a onClick={handleLogOut} className="btn">LogOut</a> :
+                <Link to="/login"><a className="btn">Login</a></Link>
+
+            }
+          </div>
+        }
+
+
+      
+
+
+
+
+
+
+
       </div>
     </div>
   );
