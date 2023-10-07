@@ -23,7 +23,7 @@ import Ranking from "../../pages/Ranking";
         {
           path:'/',
           element:<Home></Home>,
-          loader: () => fetch('../../../public/Services.json')
+          loader: () => fetch('/Services.json')
           
         },
         {
@@ -57,7 +57,7 @@ import Ranking from "../../pages/Ranking";
         {
           path:'/services/:id',
           element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
-          loader: () => fetch('../../../public/Services.json')
+          loader: () => fetch('/Services.json')
         }
        ]
      }
