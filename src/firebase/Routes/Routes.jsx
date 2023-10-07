@@ -9,6 +9,8 @@ import Blog from "../../pages/Blog";
 import ServiceDetails from "../../pages/ServiceDetails";
 import PrivateRoute from "./PrivateRoute";
 import Error from "../../pages/Error";
+import Stats from "../../pages/Stats";
+import Ranking from "../../pages/Ranking";
 
 
  
@@ -45,8 +47,17 @@ import Error from "../../pages/Error";
           element: <Blog></Blog>
         },
         {
+          path:'/stats',
+          element: <Stats></Stats>
+        },
+        {
+          path:'/ranking',
+          element: <Ranking></Ranking>
+        },
+        {
           path:'/services/:id',
-          element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
+          element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
+          loader: () => fetch('../../../public/Services.json')
         }
        ]
      }

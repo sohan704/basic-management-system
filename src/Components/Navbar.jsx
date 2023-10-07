@@ -12,7 +12,10 @@ const Navbar = () => {
     <li> <NavLink to="/career">Career</NavLink> </li>
 
     {
-      user && <li> <NavLink to="/blog">Blog</NavLink> </li>
+      user && <li> <NavLink to="/ranking">Leaderboard</NavLink> </li>
+    }
+    {
+      user && <li> <NavLink to="/stats">Stats</NavLink> </li>
     }
 
   </>
@@ -53,7 +56,7 @@ const Navbar = () => {
 
          <div>
             {
-              (user) && <img className="h-[70px] w-[70px] rounded-full object-cover mx-2"
+              (user) && <img className="h-[40px] md:h-[70px] w-9/12 rounded-full object-cover mx-2"
                 src={(user) ? user.photoURL : ''} alt="" />
             }
           </div>
@@ -64,7 +67,7 @@ const Navbar = () => {
 
          <div>
             {
-              <p className="mx-3 font-md text-lg">{(user) ? user.displayName : ''}</p>
+              <p className="mx-3 font-md text-sm md:text-lg">{(user) ? user.displayName : ''}</p>
             }
           </div>
         }
