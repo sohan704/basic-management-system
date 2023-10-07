@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Navbar from "../Components/Navbar";
 
 
 
 const Login = () => {
   
-  const {signIn} = useContext(AuthContext);
+  const {signIn,logOut,user,setLoggedIn} = useContext(AuthContext);
 
 
 
@@ -21,16 +22,20 @@ const Login = () => {
 
      signIn(email,password)
      .then(result => 
-      toast.success('Login Successful!', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        })
+        {
+          toast.success('Login Successful!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+    
+            setLoggedIn(true)
+        }
       )
      .catch(error => 
       toast.error(error.code, {
@@ -50,6 +55,8 @@ const Login = () => {
   }
 
   return (
+    <>
+        <Navbar></Navbar>
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col">
         <div className="text-center">
@@ -76,12 +83,15 @@ const Login = () => {
             <div>New Here? <Link to='/register'>Register</Link></div>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Login</button>
+           
               <ToastContainer />
             </div>
           </form>
         </div>
       </div>
     </div>
+    </>
+   
   );
 };
 
