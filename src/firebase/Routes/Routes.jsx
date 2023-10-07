@@ -8,6 +8,7 @@ import Registration from "../../pages/Registration";
 import Blog from "../../pages/Blog";
 import ServiceDetails from "../../pages/ServiceDetails";
 import PrivateRoute from "./PrivateRoute";
+import Error from "../../pages/Error";
 
 
  
@@ -15,6 +16,7 @@ import PrivateRoute from "./PrivateRoute";
      {
        path:'/',
        element:<Root></Root>,
+       errorElement: <Error></Error> ,
        children: [
         {
           path:'/',
