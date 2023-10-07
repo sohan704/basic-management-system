@@ -19,45 +19,45 @@ const Stats = () => {
 
   const data = [
     {
-      name: "Page A",
-      uv: 4000,
-      pv: 2400,
+      name: "January",
+      projects: 4000,
+      problems: 2400,
       amt: 2400
     },
     {
-      name: "Page B",
-      uv: 3000,
-      pv: 1398,
+      name: "February",
+      projects: 3000,
+      problems: 1398,
       amt: 2210
     },
     {
-      name: "Page C",
-      uv: 2000,
-      pv: 9800,
+      name: "March",
+      projects: 2000,
+      problems: 9800,
       amt: 2290
     },
     {
-      name: "Page D",
-      uv: 2780,
-      pv: 3908,
+      name: "April",
+      projects: 2780,
+      problems: 3908,
       amt: 2000
     },
     {
-      name: "Page E",
-      uv: 1890,
-      pv: 4800,
+      name: "May",
+      projects: 1890,
+      problems: 4800,
       amt: 2181
     },
     {
-      name: "Page F",
-      uv: 2390,
-      pv: 3800,
+      name: "June",
+      projects: 2390,
+      problems: 3800,
       amt: 2500
     },
     {
-      name: "Page G",
-      uv: 3490,
-      pv: 4300,
+      name: "July",
+      projects: 3490,
+      problems: 4300,
       amt: 2100
     }
   ];
@@ -69,21 +69,27 @@ const Stats = () => {
         <div className="stats stats-vertical shadow">
 
           <div className="stat">
-            <div className="stat-title">Downloads</div>
-            <div className="stat-value">31K</div>
-            <div className="stat-desc">Jan 1st - Feb 1st</div>
+            <div className="stat-title">Problems Solved</div>
+            <div className="stat-value">399</div>
+            <div className="stat-desc">LeetCode</div>
           </div>
 
           <div className="stat">
-            <div className="stat-title">New Users</div>
-            <div className="stat-value">4,200</div>
-            <div className="stat-desc">↗︎ 400 (22%)</div>
+            <div className="stat-title">Projects</div>
+            <div className="stat-value">23</div>
+            <div className="stat-desc">MERN stack</div>
           </div>
 
           <div className="stat">
-            <div className="stat-title">New Registers</div>
-            <div className="stat-value">1,200</div>
+            <div className="stat-title">Companies Applied</div>
+            <div className="stat-value">59</div>
             <div className="stat-desc">↘︎ 90 (14%)</div>
+          </div>
+
+          <div className="stat">
+            <div className="stat-title">Jobs</div>
+            <div className="stat-value">20</div>
+            <div className="stat-desc">Full Time</div>
           </div>
 
         </div>
@@ -106,8 +112,8 @@ const Stats = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" fill="#8884d8" />
-          <Bar dataKey="uv" fill="#82ca9d" />
+          <Bar dataKey="problems" fill="#8884d8" />
+          <Bar dataKey="projects" fill="#82ca9d" />
         </BarChart>
       </div>
     </div>

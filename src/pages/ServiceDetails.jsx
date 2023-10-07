@@ -14,21 +14,21 @@ const ServiceDetails = () => {
     <div>
       <Navbar></Navbar>
       <div className="mx-auto my-10">
-        <img className="mx-auto h-[250px] w-4/12 shadow-lg rounded-xl object-contain border-2 border-gray-100" src={image} alt="" />
+        <img className="mx-auto h-[250px] w-4/12 object-contain" src={image} alt="" />
       </div>
-      <div className="text-5xl text-center my-10 font-semibold text-gray-700">
+      <div className="text-3xl md:text-5xl text-center my-10 font-semibold text-gray-700">
 
         Welcome to <span className="text-red-600">{name}</span>
 
       </div>
       <div>
-        <h2 className="text-4xl my-10 text-center font-semibold">Why join {name} ?</h2>
+        <h2 className="text-2xl md:text-4xl my-10 text-center font-semibold">Why join {name} ?</h2>
       </div>
       <div className="text-center font-md text-xl w-6/12 mx-auto leading-8">
         <p>{long_description}</p>
       </div>
 
-      <div className="my-20 font-semibold text-2xl text-center space-y-5">
+      <div className="my-20 font-semibold text-xl md:text-2xl text-center space-y-5">
         <div>
           Enrollment Starts :- <span className="text-red-500">{Enrollment_starts}</span>
         </div>
@@ -39,7 +39,7 @@ const ServiceDetails = () => {
 
       <div className="flex justify-center my-10">
         <button
-         className="p-4 text-xl rounded-xl bg-red-500 font-semibold text-white">
+         className="p-4 text-lg md:text-xl rounded-xl bg-red-500 font-semibold text-white">
           Enroll Now
           </button>
       </div>
