@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
 const Career = () => {
@@ -14,7 +15,7 @@ const Career = () => {
 
               <div className="mb-6">
                 <h2 className="text-xl font-semibold mb-2">Software Development Instructor</h2>
-                <p className="mb-2">Location: [Specify Location]</p>
+                <p className="mb-2">Location: California, USA</p>
                 <ul className="list-disc ml-4">
                   <li>Lead engaging workshops and seminars on various programming languages and development tools.</li>
                   <li>Create and update curriculum content to reflect the latest industry trends.</li>
@@ -34,13 +35,14 @@ const Career = () => {
               </ul>
             </div>
 
-            <p>If you're excited about the future of tech education and are ready to make a difference, we want to hear from you! To apply, please send your resume and a cover letter to <a href="mailto:youremail@example.com">youremail@example.com</a>. Please specify the position you are applying for in the subject line.</p>
+            <p>If you're excited about the future of tech education and are ready to make a difference, we want to hear from you! To apply, please send your resume and a cover letter to <a href="mailto:youremail@example.com">Techeducation@gmail.com</a>. Please specify the position you are applying for in the subject line.</p>
 
             <p className="mt-4">Tech Education is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</p>
           </div>
         </div>
 
       </div>
+      <Footer></Footer>
     </div>
   );
 };

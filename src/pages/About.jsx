@@ -1,10 +1,11 @@
+import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
 const About = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="text-center w-9/12 mx-auto space-y-5 mt-5">
+      <div className="text-center w-9/12 mx-auto space-y-5 my-36">
          <h2 className="text-3xl lg:text-5xl w-9/12 mx-auto font-semibold text-gray-900">
          Welcome to Tech Education - Elevating Careers Worldwide!
          </h2>
@@ -15,6 +16,7 @@ const About = () => {
          JOIN US NOW AND LET`S TURN YOUR TECH DREAMS INTO REALITY!
          </h2>
       </div>
+       <Footer></Footer>
     </div>
   );
 };
