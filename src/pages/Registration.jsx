@@ -93,7 +93,7 @@ const Registration = () => {
       })
       .catch(error => {
         console.log(error);
-        toast.error(error.message, {
+        toast.error(error.code, {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
