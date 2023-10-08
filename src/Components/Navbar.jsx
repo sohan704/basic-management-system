@@ -6,6 +6,10 @@ const Navbar = () => {
 
   const { signIn, logOut, user, loading } = useContext(AuthContext);
 
+
+  
+
+
   const navlinks = <>
     <li> <NavLink to="/">Home</NavLink> </li>
     <li> <NavLink to="/about">About</NavLink> </li>
@@ -54,10 +58,12 @@ const Navbar = () => {
       <div className="navbar-end">
         {
 
-         <div>
+          <div>
             {
-              (user) && <img className="h-[40px] md:h-[70px] w-9/12 rounded-full object-cover mx-2"
-                src={(user) ? user.photoURL : ''} alt="" />
+             
+                (user) && <img className="h-[25px] md:h-[60px] w-9/12 rounded-full object-cover mx-2"
+                  src={(user) ? user.photoURL : ''} alt="" />
+              
             }
           </div>
         }
@@ -65,7 +71,7 @@ const Navbar = () => {
 
         {
 
-         <div>
+          <div>
             {
               <p className="mx-3 font-md text-sm md:text-lg">{(user) ? user.displayName : ''}</p>
             }
@@ -76,7 +82,7 @@ const Navbar = () => {
 
         {
 
-       <div>
+          <div>
             {
               (user) ? <a onClick={handleLogOut} className="btn">LogOut</a> :
                 <Link to="/login"><a className="btn">Login</a></Link>
@@ -86,7 +92,7 @@ const Navbar = () => {
         }
 
 
-      
+
 
 
 
