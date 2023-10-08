@@ -11,6 +11,8 @@ import PrivateRoute from "./PrivateRoute";
 import Error from "../../pages/Error";
 import Stats from "../../pages/Stats";
 import Ranking from "../../pages/Ranking";
+import PrivateRanking from "./PrivateRanking";
+import PrivateStats from "./PrivateStats";
 
 
  
@@ -48,11 +50,11 @@ import Ranking from "../../pages/Ranking";
         },
         {
           path:'/stats',
-          element: <Stats></Stats>
+          element: <PrivateStats><Stats></Stats></PrivateStats>
         },
         {
           path:'/ranking',
-          element: <Ranking></Ranking>
+          element: <PrivateRanking><Ranking></Ranking></PrivateRanking>
         },
         {
           path:'/services/:id',
