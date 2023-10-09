@@ -57,7 +57,18 @@ const Login = () => {
   }
 
   const handleGoogleLogin = () => {
-    googleLogin().then().catch();
+    googleLogin().then(result => {
+      toast.success('Login Successful!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }).catch();
   }
 
   return (
